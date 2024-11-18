@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Customer index</title>
+	</head>
+	<body>
+		<h1>All Customers</h1>
+		<% customers.forEach(customer => { %>
+		<a href="/customers/<%= customer._id %>"> <%= customer.name %> </a>
+		<% }); %>
+	</body>
+</html>
